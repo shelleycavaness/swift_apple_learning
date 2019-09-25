@@ -1,33 +1,28 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
-{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl280\partightenfactor0
-
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 # Swift Basics: Apple promo \
+# Swift Basics: Apple promo \
 \
 3 weeks of learning swift at Simplon.co\
 \
-## Getting Started With Swift\
-\
+## Getting Started With Swift
 
-First you need a Mac. you cant use a virtual machine or try and use Docker to facke it . This is a bunch of mini projects just to look as some of the most basic building blocks of Xcode and Swift mobile applications.\
-\
-### Basic Notions\
-\
-What is a segue?\
-\
-```\
-examples\
+First you need a Mac. you cant use a virtual machine or try and use Docker to facke it . This is a bunch of mini projects just to look as some of the most basic building blocks of Xcode and Swift mobile applications.
+
+### Basic Notions
+
+#### What is a segue?
+
+
+examples:
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     guard let selectedPath = tableView.indexPathForSelectedRow else { return }
     if let target = segue.destination as? UserViewController {
     target.selectedUser = selectedPath.row
         }
     }
+
+
+
+#### UserViewController
+
 
 ```\
 \
