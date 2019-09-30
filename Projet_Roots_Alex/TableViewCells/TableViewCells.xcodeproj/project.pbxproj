@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D06D14D23423FEA00860137 /* TodayChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D14C23423FEA00860137 /* TodayChallengeViewController.swift */; };
+		0D06D14F2342448600860137 /* actions_db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D06D14E2342448600860137 /* actions_db.swift */; };
 		1FE12133233E33CB00A71BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12132233E33CB00A71BE6 /* AppDelegate.swift */; };
 		1FE12135233E33CB00A71BE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12134233E33CB00A71BE6 /* ViewController.swift */; };
 		1FE12138233E33CB00A71BE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE12136233E33CB00A71BE6 /* Main.storyboard */; };
@@ -15,7 +17,7 @@
 		1FE12148233E33CD00A71BE6 /* TableViewCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12147233E33CD00A71BE6 /* TableViewCellsTests.swift */; };
 		1FE12153233E33CD00A71BE6 /* TableViewCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12152233E33CD00A71BE6 /* TableViewCellsUITests.swift */; };
 		1FE12165233E3CA000A71BE6 /* ActionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12164233E3CA000A71BE6 /* ActionsTableViewController.swift */; };
-		1FE12167233E42CD00A71BE6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12166233E42CD00A71BE6 /* Action.swift */; };
+		1FE12167233E42CD00A71BE6 /* Action_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12166233E42CD00A71BE6 /* Action_Model.swift */; };
 		1FE12169233E514400A71BE6 /* ActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE12168233E514400A71BE6 /* ActionsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D06D14C23423FEA00860137 /* TodayChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayChallengeViewController.swift; sourceTree = "<group>"; };
+		0D06D14E2342448600860137 /* actions_db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actions_db.swift; sourceTree = "<group>"; };
 		1FE1212F233E33CB00A71BE6 /* TableViewCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE12132233E33CB00A71BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FE12134233E33CB00A71BE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		1FE12152233E33CD00A71BE6 /* TableViewCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellsUITests.swift; sourceTree = "<group>"; };
 		1FE12154233E33CD00A71BE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE12164233E3CA000A71BE6 /* ActionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsTableViewController.swift; sourceTree = "<group>"; };
-		1FE12166233E42CD00A71BE6 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		1FE12166233E42CD00A71BE6 /* Action_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action_Model.swift; sourceTree = "<group>"; };
 		1FE12168233E514400A71BE6 /* ActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D06D14923423EEB00860137 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FE12166233E42CD00A71BE6 /* Action_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D06D14A23423EF200860137 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FE12136233E33CB00A71BE6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D06D14B23423EF900860137 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FE12134233E33CB00A71BE6 /* ViewController.swift */,
+				0D06D14C23423FEA00860137 /* TodayChallengeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		1FE12126233E33CB00A71BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +132,16 @@
 		1FE12131233E33CB00A71BE6 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				1FE12166233E42CD00A71BE6 /* Action.swift */,
+				0D06D14B23423EF900860137 /* Controller */,
+				0D06D14A23423EF200860137 /* View */,
+				0D06D14923423EEB00860137 /* Model */,
 				1FE12132233E33CB00A71BE6 /* AppDelegate.swift */,
-				1FE12134233E33CB00A71BE6 /* ViewController.swift */,
-				1FE12136233E33CB00A71BE6 /* Main.storyboard */,
 				1FE12168233E514400A71BE6 /* ActionsTableViewCell.swift */,
 				1FE12164233E3CA000A71BE6 /* ActionsTableViewController.swift */,
 				1FE12139233E33CD00A71BE6 /* Assets.xcassets */,
 				1FE1213B233E33CD00A71BE6 /* LaunchScreen.storyboard */,
 				1FE1213E233E33CD00A71BE6 /* Info.plist */,
+				0D06D14E2342448600860137 /* actions_db.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -269,7 +299,9 @@
 				1FE12135233E33CB00A71BE6 /* ViewController.swift in Sources */,
 				1FE12133233E33CB00A71BE6 /* AppDelegate.swift in Sources */,
 				1FE12165233E3CA000A71BE6 /* ActionsTableViewController.swift in Sources */,
-				1FE12167233E42CD00A71BE6 /* Action.swift in Sources */,
+				0D06D14F2342448600860137 /* actions_db.swift in Sources */,
+				0D06D14D23423FEA00860137 /* TodayChallengeViewController.swift in Sources */,
+				1FE12167233E42CD00A71BE6 /* Action_Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
