@@ -3,7 +3,7 @@
 //  TableViewCells
 //
 //  Created by shelley cavaness on 30/09/2019.
-//  Copyright © 2019 Alexandre Bloch. All rights reserved.
+//  Copyright © 2019 Roots. All rights reserved.
 //
 
 import UIKit
@@ -26,6 +26,8 @@ class TodayChallengeViewController: UIViewController {
         actionDB()
         //create the random number used to show an action in thethe view
         let randomInt = Int.random(in: 0..<actions.count)
+        
+        
         //View an action
         challengeTitleLabel.text = String(actions[randomInt].title)
         challengeDescription.text = String(actions[randomInt].description)
